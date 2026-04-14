@@ -29,7 +29,7 @@ app.post("/slack/events", async (req, res) => {
 
       // 🔹 Llamada a Flowise
       const flowiseRes = await axios.post(
-        "https://flowise-latest-hzw9.onrender.com/api/v1/prediction/8cae7ab4-cb27-4294-9784-2d21a13f4b37",
+        "https://dev.flowiseai.com/v2/agentcanvas/af069ba3-0c60-4bfa-851b-57839d663f46",
         {
           question: cleanText
         }
