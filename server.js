@@ -31,10 +31,7 @@ app.post("/slack/events", async (req, res) => {
       const flowiseRes = await axios.post(
         "https://flowise-latest-hzw9.onrender.com/api/v1/prediction/8cae7ab4-cb27-4294-9784-2d21a13f4b37",
         {
-          question: cleanText,
-          overrideConfig: {
-            sessionId: user
-          }
+          question: cleanText
         }
       );
 
